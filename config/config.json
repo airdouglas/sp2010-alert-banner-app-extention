@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "sp-2010-alert-banner-app-extention-application-customizer": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/sp2010AlertBannerAppExtention/Sp2010AlertBannerAppExtentionApplicationCustomizer.js",
+          "manifest": "./src/extensions/sp2010AlertBannerAppExtention/Sp2010AlertBannerAppExtentionApplicationCustomizer.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "Sp2010AlertBannerAppExtentionApplicationCustomizerStrings": "lib/extensions/sp2010AlertBannerAppExtention/loc/{locale}.js"
+  }
+}
