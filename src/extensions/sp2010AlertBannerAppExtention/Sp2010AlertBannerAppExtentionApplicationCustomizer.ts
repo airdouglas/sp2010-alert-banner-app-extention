@@ -85,7 +85,6 @@ export default class Sp2010AlertBannerAppExtentionApplicationCustomizer
         if (!topString) {
           topString = "(Top property was not defined.)";
         }
-  
         if (this._topPlaceholder.domElement) {
           this._topPlaceholder.domElement.innerHTML = `
           <div class="${styles.app}">
