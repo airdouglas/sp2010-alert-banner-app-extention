@@ -4,6 +4,6 @@
         Title="Sp2010AlertBannerAppExtention"
         Location="ClientSideExtension.ApplicationCustomizer"
         ClientSideComponentId="a5a6f799-ba66-4bf8-b54c-1e9fd93636cd"
-        ClientSideComponentProperties="{&quot;Top&quot;:&quot;SharePoint 2010 workflows will retire on Dec 31st 2021. ELEM &quot;,&quot;Bottom&quot;:&quot;Bottom area in the page&quot;}">
+        ClientSideComponentProperties="{&quot;Top&quot;:&quot;This site contains 2010 Workflows; such feature will cease to function soon. Please contact the SharePoint Site Admin or Owner to ensure a plan is in place to modernize or remove them. <a href='https://www.w3schools.com' target='_blank'>Click for more info!</a>&quot;,&quot;Bottom&quot;:&quot;Bottom area in the page&quot;}">
     </CustomAction>
 </Elements>
