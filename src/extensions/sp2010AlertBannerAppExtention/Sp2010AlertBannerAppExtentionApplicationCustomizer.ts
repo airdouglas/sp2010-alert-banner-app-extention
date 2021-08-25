@@ -98,9 +98,9 @@ export default class Sp2010AlertBannerAppExtentionApplicationCustomizer
         }
       }
     }
-  
+    let bottomMessage:boolean = false;
     // Handling the bottom placeholder
-    if (!this._bottomPlaceholder) {
+    if (bottomMessage && !this._bottomPlaceholder) {
       this._bottomPlaceholder = this.context.placeholderProvider.tryCreateContent(
         PlaceholderName.Bottom,
         { onDispose: this._onDispose }
