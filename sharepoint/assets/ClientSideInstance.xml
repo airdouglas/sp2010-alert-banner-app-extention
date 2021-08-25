@@ -4,6 +4,6 @@
         Title="Sp2010AlertBannerAppExtention"
         Location="ClientSideExtension.ApplicationCustomizer"
         ComponentId="a5a6f799-ba66-4bf8-b54c-1e9fd93636cd"
-        Properties="{&quot;testMessage&quot;:&quot;Test message&quot;}">
+        Properties="{&quot;Top&quot;:&quot;SharePoint 2010 workflows will retire on Dec 31st 2021. CSI&quot;,&quot;Bottom&quot;:&quot;Bottom area in the page&quot;}">
     </ClientSideComponentInstance>
 </Elements>
