@@ -56,13 +56,13 @@ function Add-SP2010WKBanner
                     CertificateBase64Encoded = $certificateBase64Encode
                     Tenant                   = $("{0}.onmicrosoft.com" -f  $env:tenant)
             }
-            $jitRequestSitesConnection = Connect-PnPOnline @HashArguments  -ReturnConnection
+            $newSiteConn = Connect-PnPOnline @HashArguments  -ReturnConnection
 
             #### The following lines are to add a message to the site
             # add new folder to the "SiteAssets"
             Add-PnPfolder -Connection $newSiteConn -Folder "SiteAssets" -Name "SP2010WKBannerFiles" -ErrorAction Ignore
             # upload the JS file to the new folder
-            $file = Add-PnPFile -Connection $newSiteConn -Path $AddSP2010BannerMessage -Folder "SiteAssets/SP2010WKBannerFiles"  -ErrorAction Ignore
+            Add-PnPFile -Connection $newSiteConn -Path $AddSP2010BannerMessage -Folder "SiteAssets/SP2010WKBannerFiles"  -ErrorAction Ignore
             # add the link to the JS file for site scope
             Add-PnPJavaScriptLink -Connection $newSiteConn  -Name SP2010WKBannerFiles -Url 'SiteAssets/SP2010WKBannerFiles/AddSP2010BannerMessage.js' -Sequence 9999 -Scope Site  -ErrorAction Ignore
 
@@ -111,7 +111,7 @@ function Remove-SP2010WKBanner
 
             $jslFound = Get-PnPJavaScriptLink -Name SP2010WKBannerFiles -Scope All -ErrorAction Ignore -Connection $newSiteConn
 
-            if ( $jslFound -ne $null )
+            if ( $null -ne $jslFound )
             {
                 Remove-PnPJavaScriptLink -Identity $jslFound.Id -Connection $newSiteConn -Force -Scope All
             }
@@ -141,7 +141,7 @@ function Remove-SP2010WKBanner
 }
 
 
-function Process-AddRemoveBanner
+function Publish-AddRemoveBanner
 {
     [CmdletBinding()]
     Param
@@ -164,7 +164,6 @@ function Process-AddRemoveBanner
             ForEach-Object {
                 try
                 {
-                    $newSiteUrl = $_.Url
                     if ( $Action -eq "Add" )
                     {
                         Write-Host $("Site URL {0} for {1}" -f $_.Url, $Action )
@@ -193,4 +192,4 @@ function Process-AddRemoveBanner
     }
 }
 # Add or Remove
-Process-AddRemoveBanner -Action $ActionType
+Publish-AddRemoveBanner -Action $ActionType
