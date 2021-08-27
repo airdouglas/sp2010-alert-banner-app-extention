@@ -19,7 +19,7 @@ function RemoteManager_Inject() {
 
     // load jQuery 
     loadScript(jQuery, function () {
-		var message = "<img src='/_Layouts/Images/STS_ListItem_43216.gif' align='absmiddle'> <font color='#AA0000'>This site contains 2010 Workflows; such feature will cease to function soon. Please contact the SharePoint Site Admin or Owner to ensure a plan is in place to modernize or remove them.</font>"
+		var message = "<img src='/_Layouts/Images/STS_ListItem_43216.gif' align='absmiddle'><font color='#AA0000'>This site contains 2010 Workflow(s) which will cease to function on 12/31/2021. Please, click&nbsp;<a href="https://dvagov.sharepoint.com/sites/OITSharePointPlatform/SitePages/2010-Workflow.aspx?source=/sites/OITSharePointPlatform/_layouts/15/news.aspx&promotedState=1">here</a>&nbsp;to locate the workflows. If you need assistance modernizing the 2010 Workflow(s), please, contact your SharePoint Site Admin or Site Owner.</font>"
 		SetStatusBar(message);
 		
         // Customize the viewlsts.aspx page
