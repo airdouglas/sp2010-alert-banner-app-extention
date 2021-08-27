@@ -90,7 +90,7 @@ export default class Sp2010AlertBannerAppExtentionApplicationCustomizer
           <div class="${styles.app}">
             <div class="${styles.top}">
               <i class="ms-Icon ms-Icon--Info" aria-hidden="true"></i>
-              This site contains 2010 Workflow(s) which will cease to function on 12/31/2021. Please, click&nbsp;<a href="https://dvagov.sharepoint.com/sites/OITSharePointPlatform/SitePages/2010-Workflow.aspx?source=/sites/OITSharePointPlatform/_layouts/15/news.aspx&promotedState=1">here</a>&nbsp;to locate the workflows. If you need assistance modernizing the 2010 Workflow(s), please, contact your SharePoint Site Admin or Site Owner.
+              This site contains 2010 Workflow(s) which will cease to function on 12/31/2021. Please, click&nbsp;<a href="https://dvagov.sharepoint.com/sites/OITSharePointPlatform/SitePages/2010-Workflow.aspx?source=/sites/OITSharePointPlatform/_layouts/15/news.aspx&promotedState=1" target="_blank">here</a>&nbsp;to locate the workflows. If you need assistance modernizing the 2010 Workflow(s), please, contact your SharePoint Site Admin or Site Owner.
             </div>
           </div>`;
         }
