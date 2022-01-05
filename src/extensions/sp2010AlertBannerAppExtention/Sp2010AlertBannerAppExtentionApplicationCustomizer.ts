@@ -90,7 +90,7 @@ export default class Sp2010AlertBannerAppExtentionApplicationCustomizer
           <div class="${styles.app}">
             <div class="${styles.top}">
               <i class="ms-Icon ms-Icon--Info" aria-hidden="true"></i>
-              As of January 1, 2022, Microsoft has updated the SharePoint Online environment to no longer allow SharePoint 2010 workflows to be run.  Your site still had active 2010 workflows as of that date.  If you have issues with workflows no longer working on your site, please open a ticket with the Enterprise Service Desk&nbsp;(<a href="https://yourit.va.gov" target="_blank">YourIT</a>)&nbsp;assigned to Enterprise SharePoint Team.
+              As of January 1, 2022, Microsoft has updated the SharePoint Online environment to no longer allow SharePoint 2010 workflows to be run.</br>Your site still had active 2010 workflows as of that date.  If you have issues with workflows no longer working on your site, please open a ticket with the Enterprise Service Desk&nbsp;(<a href="https://yourit.va.gov" target="_blank">YourIT</a>)&nbsp;assigned to Enterprise SharePoint Team.
             </div>
           </div>`;
         }
