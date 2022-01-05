@@ -1,6 +1,8 @@
 name: SPFx WebParts CICD with Office 365 CLI
 
-on: push
+#on: push
+on:
+  workflow_dispatch:
 
 # Variables that are available for all the jobs in the workflow
 env:
