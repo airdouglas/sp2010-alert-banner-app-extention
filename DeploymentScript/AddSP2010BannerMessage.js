@@ -19,8 +19,11 @@ function RemoteManager_Inject() {
 
     // load jQuery 
     loadScript(jQuery, function () {
-		var message = "<img src='/_Layouts/Images/STS_ListItem_43216.gif' align='absmiddle'><font color='#AA0000'>This site contains 2010 Workflow(s) which will cease to function on 12/31/2021. Please, click&nbsp;<a href="https://dvagov.sharepoint.com/sites/OITSharePointPlatform/SitePages/2010-Workflow.aspx?source=/sites/OITSharePointPlatform/_layouts/15/news.aspx&promotedState=1">here</a>&nbsp;to locate the workflows. If you need assistance modernizing the 2010 Workflow(s), please, contact your SharePoint Site Admin or Site Owner.</font>"
-		SetStatusBar(message);
+		// var message = "<img src='/_Layouts/Images/STS_ListItem_43216.gif' align='absmiddle'><font color='#AA0000'>This site contains 2010 Workflow(s) which will cease to function on 12/31/2021. Please, click&nbsp;<a href="https://dvagov.sharepoint.com/sites/OITSharePointPlatform/SitePages/2010-Workflow.aspx?source=/sites/OITSharePointPlatform/_layouts/15/news.aspx&promotedState=1">here</a>&nbsp;to locate the workflows. If you need assistance modernizing the 2010 Workflow(s), please, contact your SharePoint Site Admin or Site Owner.</font>";
+        var message = "<img src='/_Layouts/Images/STS_ListItem_43216.gif' align='absmiddle'><font color='#AA0000'>As of January 1, 2022, Microsoft has updated the SharePoint Online environment to no longer allow SharePoint 2010 workflows to be run.  Your site still had active 2010 workflows as of that date.  If you have issues with workflows no longer working on your site, please open a ticket with the Enterprise Service Desk (<a href='https://yourit.va.gov'>YourIT</a>) assigned to Enterprise SharePoint Team.</font>";
+    
+
+        SetStatusBar(message);
 		
         // Customize the viewlsts.aspx page
         if (IsOnPage("viewlsts.aspx")) {
