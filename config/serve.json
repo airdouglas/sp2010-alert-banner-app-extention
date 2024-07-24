@@ -4,7 +4,7 @@
   "https": true,
   "serveConfigurations": {
     "default": {
-      "pageUrl": "https://m365x575894.sharepoint.com/sites/Test1/SitePages/Home.aspx",
+      "pageUrl": "https://m365x02797022.sharepoint.com/sites/test1/SitePages/CollabHome.aspx",
       "customActions": {
         "a5a6f799-ba66-4bf8-b54c-1e9fd93636cd": {
           "location": "ClientSideExtension.ApplicationCustomizer",
@@ -16,7 +16,7 @@
       }
     },
     "sp2010AlertBannerAppExtention": {
-      "pageUrl": "https://m365x575894.sharepoint.com/sites/Test1/SitePages/Home.aspx",
+      "pageUrl": "https://m365x02797022.sharepoint.com/sites/test1/SitePages/CollabHome.aspx",
       "customActions": {
         "a5a6f799-ba66-4bf8-b54c-1e9fd93636cd": {
           "location": "ClientSideExtension.ApplicationCustomizer",
